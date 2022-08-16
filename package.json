@@ -1,10 +1,10 @@
 {
-  "name": "@atul15r/react-tabs",
+  "name": "@atul15r/react-drawer",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/react-tabs"
+    "registry": "https://npm.pkg.github.com/react-drawer"
   },
-  "version": "1.0.0",
-  "description": "React Tab Navigations Component",
+  "version": "0.0.1",
+  "description": "React Drawer Component",
   "scripts": {
     "lint": "concurrently --kill-others-on-fail --names eslint,stylelint,prettier --prefix-colors \"bgGreen.white.bold,bgBlue.white.bold,bgMagenta.white.bold\" \"yarn lint:scripts\" \"yarn lint:styles\" \"yarn prettier:check\"",
     "lint:scripts": "eslint --ext .ts,.tsx src",
@@ -20,17 +20,17 @@
   "author": "atul",
   "license": "MIT",
   "keywords": [
-    "react-tabs",
-    "tabs",
-    "tab-navigation"
+    "react-drawer",
+    "drawer",
+    "drawer-navigation"
   ],
   "bugs": {
-    "url": "https://github.com/atul15r/react-tabs/issues"
+    "url": "https://github.com/atul15r/react-drawer/issues"
   },
-  "homepage": "https://github.com/atul15r/react-tabs",
+  "homepage": "https://github.com/atul15r/react-drawer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atul15r/react-tabs.git"
+    "url": "https://github.com/atul15r/react-drawer.git"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
