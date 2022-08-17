@@ -91,15 +91,15 @@ export default App;
 
 ```
 
-<!-- # Props
+ # Props
 
-| name            | type     | required | default   | description                                                    |
-| --------------- | -------- | -------- | --------- | -------------------------------------------------------------- |
-| tabs            | array    | true     | []        | it takes an array of object `{ title: string \| ReactNode }[]` |
-| tabsClassName   | string   | false    | undefined | add any custom class you want                                  |
-| tabsStyle       | object   | false    | undefined | `wrapperStyle= {{ background:"#ccc", color:"#999", ...etc }}`  |
-| tabClassName    | string   | false    | undefined | add any custom class you want                                  |
-| tabStyle        | object   | false    | undefined | ` itemStyle= {{ padding:4, }}`                                 |
-| borderStyle     | object   | false    | undefined | `borderStyle= {{ background:#6b6b6b, }}`                       |
-| borderClassName | string   | false    | undefined | add any custom class you want                                  |
-| onChange        | function | false    | undefined | ` onChange={(tabIndex)=>setCurrentTab(tabIndex)}`              | -->
+| name             | type                 | required | default | description                                                                                                                              |
+|------------------|----------------------|----------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
+| show             | `boolean`            | true     | false   | `false` - drawer close   `true` - drawer open                                                                                            |
+| onClose          | `func`               | false    |         | pass a func to toggle the drawer view                                                                                                    |
+| overlayStyle     | `object`             | false    |         | `overlayStyle=  {{                    background:"#ccc",                    color:"#999",                    ...etc                  }}` |
+| overlayClassName | `string`             | false    |         | add any custom class you want                                                                                                            |
+| drawerStyle      | `object`             | false    |         | `drawerStyle= {{         background:#6b6b6b, }}`                                                                                         |
+| drawerClassName  | `string`             | false    |         | add any custom class you want                                                                                                            |
+| width            | `string` \| `number` | false    | 250     | change width of the drawer                                                                                                               |
+| direction        | `left` \| `right`    | false    | left    | change drawer position  eg: `direction="right"`                                                                                          |
