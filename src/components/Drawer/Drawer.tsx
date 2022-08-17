@@ -32,15 +32,15 @@ const Drawer: FC<DrawerProps> = ({
           zIndex: 40,
           ...(show
             ? {
-                // transitionProperty: 'visibility, opacity',
-                // transitionDuration: '0s, 1s',
+                transitionProperty: 'visibility, opacity',
+                transitionDuration: '0s, 150ms',
               }
             : {
                 opacity: 0,
                 visibility: 'hidden',
                 transitionProperty: 'opacity, visibility',
-                transitionDuration: '1s, 0s',
-                transitionDelay: '0s, 1s',
+                transitionDuration: '300ms, 0s',
+                transitionDelay: '0s, 300ms',
               }),
           ...overlayStyle,
         }}
@@ -57,7 +57,7 @@ const Drawer: FC<DrawerProps> = ({
           [direction]: 0,
           transitionProperty: 'all',
           transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
-          transitionDuration: '150ms',
+          transitionDuration: '300ms',
           width: show ? width : 0,
           display: show ? 'block' : 'none',
           zIndex: 999,
