@@ -19,24 +19,35 @@ const Drawer: FC<DrawerProps> = ({
   }
   return (
     <>
-      {show ? (
-        <section
-          style={{
-            width: '100%',
-            height: '100vh',
-            background: '#2a2a2a5c',
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            zIndex: 40,
-            ...overlayStyle,
-          }}
-          className={overlayClassName}
-          onClick={overlayClick}
-        />
-      ) : null}
+      <section
+        style={{
+          width: '100%',
+          height: '100vh',
+          background: '#2a2a2a5c',
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          zIndex: 40,
+          ...(show
+            ? {
+                // transitionProperty: 'visibility, opacity',
+                // transitionDuration: '0s, 1s',
+              }
+            : {
+                opacity: 0,
+                visibility: 'hidden',
+                transitionProperty: 'opacity, visibility',
+                transitionDuration: '1s, 0s',
+                transitionDelay: '0s, 1s',
+              }),
+          ...overlayStyle,
+        }}
+        className={overlayClassName}
+        onClick={overlayClick}
+      />
+
       <div
         style={{
           height: '100%',
