@@ -10,4 +10,5 @@ export interface DrawerProps {
   drawerStyle?: CSSProperties
   width?: string | number
   direction?: 'left' | 'right'
+  backdrop?: string
 }
