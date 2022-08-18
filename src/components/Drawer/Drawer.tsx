@@ -45,7 +45,7 @@ const Drawer: FC<DrawerProps> = ({
           className={`drawer-content ${drawerClassName}`}
           aria-modal="true"
           role="dialog"
-          style={drawerStyle}
+          style={{...(show ? drawerStyle : {})}}
         >
           {children}
         </div>
