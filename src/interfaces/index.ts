@@ -9,6 +9,7 @@ export interface DrawerProps {
   drawerClassName?: string
   drawerStyle?: CSSProperties
   width?: string | number
-  direction?: 'left' | 'right'
+  height?: string | number
+  direction?: 'left' | 'right' | 'bottom' | 'top'
   backdrop?: string
 }
