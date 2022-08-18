@@ -1,54 +1,53 @@
+.drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
 
-  .drawer {
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    pointer-events: none;
-  }
-  
-  .drawer-mask-active {
-    position: absolute;
-    inset: 0;
-    z-index: 1000;
-    pointer-events: auto;
-    transition: all 0.3s;
-  }
-  
-  .drawer-mask-close {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition-property: opacity, visibility;
-    transition-duration: 800ms, 0s;
-    transition-delay: 0s, 800ms;
-  }
-  
-  .start {
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-    outline: none;
-    position: absolute;
-  }
-  .wrapper {
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: 6px 0 16px -8px #00000014, 9px 0 28px #0000000d,
-      12px 0 48px 16px #00000008;
-    position: absolute;
-    z-index: 1000;
-    transition: all 0.3s;
-  }
-  .drawer-content {
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    background: #fff;
-    pointer-events: auto;
-  }
-  /* .d-left {
+.drawer-mask-active {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+  pointer-events: auto;
+  transition: all 0.3s;
+}
+
+.drawer-mask-close {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 800ms, 0s;
+  transition-delay: 0s, 800ms;
+}
+
+.start {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  outline: none;
+  position: absolute;
+}
+.wrapper {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 6px 0 16px -8px #00000014, 9px 0 28px #0000000d,
+    12px 0 48px 16px #00000008;
+  position: absolute;
+  z-index: 1000;
+  transition: all 0.3s;
+}
+.drawer-content {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background: #fff;
+  pointer-events: auto;
+}
+/* .d-left {
     top: 0;
     bottom: 0;
     left: 0;
@@ -69,4 +68,3 @@
     bottom: 0;
     left: 0;
   } */
-  
