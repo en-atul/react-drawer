@@ -9,7 +9,7 @@ app.**
 
 **[Live Demo](https://codesandbox.io/s/atul15r-react-drawer-n057hd)**
 
-<!-- ![Alt text](visual/react-drawer.gif?raw=true 'React Drawer') -->
+![Alt text](visual/react-drawer.gif?raw=true 'React Drawer')
 
 # Installation
 
@@ -91,15 +91,15 @@ export default App;
 
 ```
 
- # Props
+# Props
 
-| name             | type                 | required | default | description                                                                                                                              |
-|------------------|----------------------|----------|---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| show             | `boolean`            | true     | false   | `false` - drawer close   `true` - drawer open                                                                                            |
-| onClose          | `func`               | false    |         | pass a func to toggle the drawer view                                                                                                    |
-| overlayStyle     | `object`             | false    |         | `overlayStyle=  {{                    background:"#ccc",                    color:"#999",                    ...etc                  }}` |
-| overlayClassName | `string`             | false    |         | add any custom class you want                                                                                                            |
-| drawerStyle      | `object`             | false    |         | `drawerStyle= {{         background:#6b6b6b, }}`                                                                                         |
-| drawerClassName  | `string`             | false    |         | add any custom class you want                                                                                                            |
-| width            | `string` \| `number` | false    | 250     | change width of the drawer                                                                                                               |
-| direction        | `left` \| `right`    | false    | left    | change drawer position  eg: `direction="right"`                                                                                          |
+| name             | type                 | required | default | description                                                   |
+| ---------------- | -------------------- | -------- | ------- | ------------------------------------------------------------- |
+| show             | `boolean`            | true     | false   | `false` - drawer close `true` - drawer open                   |
+| onClose          | `func`               | false    |         | pass a func to toggle the drawer view                         |
+| overlayStyle     | `object`             | false    |         | `overlayStyle= {{ background:"#ccc", color:"#999", ...etc }}` |
+| overlayClassName | `string`             | false    |         | add any custom class you want                                 |
+| drawerStyle      | `object`             | false    |         | `drawerStyle= {{ background:#6b6b6b, }}`                      |
+| drawerClassName  | `string`             | false    |         | add any custom class you want                                 |
+| width            | `string` \| `number` | false    | 250     | change width of the drawer                                    |
+| direction        | `left` \| `right`    | false    | left    | change drawer position eg: `direction="right"`                |
