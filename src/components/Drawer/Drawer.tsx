@@ -1,7 +1,7 @@
 import React, {FC} from 'react'
 
 import {DrawerProps} from '../../interfaces'
-import './drawr.css'
+import './drawer.css'
 
 const Drawer: FC<DrawerProps> = ({
   children,
