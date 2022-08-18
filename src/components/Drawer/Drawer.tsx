@@ -38,7 +38,10 @@ const Drawer: FC<DrawerProps> = ({
         data-sentinel="start"
         className="start"
       />
-      <div className="wrapper" style={{..._direction[direction]}}>
+      <div
+        className="wrapper"
+        style={{..._direction[direction], overflow: 'hidden'}}
+      >
         <div
           className={`drawer-content ${drawerClassName}`}
           aria-modal="true"
