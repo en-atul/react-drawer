@@ -93,13 +93,13 @@ export default App;
 
 # Props
 
-| name             | type                 | required | default | description                                                   |
-| ---------------- | -------------------- | -------- | ------- | ------------------------------------------------------------- |
-| show             | `boolean`            | true     | false   | `false` - drawer close `true` - drawer open                   |
-| onClose          | `func`               | false    |         | pass a func to toggle the drawer view                         |
-| overlayStyle     | `object`             | false    |         | `overlayStyle= {{ background:"#ccc", color:"#999", ...etc }}` |
-| overlayClassName | `string`             | false    |         | add any custom class you want                                 |
-| drawerStyle      | `object`             | false    |         | `drawerStyle= {{ background:#6b6b6b, }}`                      |
-| drawerClassName  | `string`             | false    |         | add any custom class you want                                 |
-| width            | `string` \| `number` | false    | 250     | change width of the drawer                                    |
-| direction        | `left` \| `right`    | false    | left    | change drawer position eg: `direction="right"`                |
+| name            | type                                   | required | default | description                                                                |
+|-----------------|----------------------------------------|----------|---------|----------------------------------------------------------------------------|
+| show            | `boolean`                              | true     | false   | `false` - drawer close   `true` - drawer open                              |
+| onClose         | `func`                                 | false    |         | pass a func to toggle the drawer view                                      |
+| drawerStyle     | `object`                               | false    |         | `drawerStyle= {{         background:#6b6b6b, }}`                           |
+| drawerClassName | `string`                               | false    |         | add any custom class you want                                              |
+| width           | `string` \| `number`                   | false    | 350     | width will be effective only if the drawer position is  `left` or `right`  |
+| height          | `string` \| `number`                   | false    | 350     | height will be effective only if the drawer position is  `top` or `bottom` |
+| direction       | `left` \| `right` \| `top` \| `bottom` | false    | left    | change drawer position  eg: `direction="right"`                            |
+| backdrp         | `string`                               | false    |         | drawer backdground color                                                   |
