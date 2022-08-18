@@ -11,9 +11,7 @@ const Drawer: FC<DrawerProps> = ({
   show,
   onClose,
   drawerClassName,
-  drawerStyle,
-  // overlayClassName,
-  // overlayStyle,
+  drawerStyle = {},
   backdrop = 'rgba(0, 0, 0, 0.45)',
 }) => {
   const _direction = {
@@ -45,7 +43,7 @@ const Drawer: FC<DrawerProps> = ({
           className={`drawer-content ${drawerClassName}`}
           aria-modal="true"
           role="dialog"
-          style={{...(show ? drawerStyle : {})}}
+          style={{boxSizing: 'border-box', ...drawerStyle}}
         >
           {children}
         </div>

@@ -17,4 +17,5 @@ export const Default = Template.bind({})
 Default.args = {
   children: <p>Hello drawer</p>,
   show: true,
+  drawerStyle: {padding: 20},
 }

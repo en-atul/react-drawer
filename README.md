@@ -79,7 +79,6 @@ const App = () => {
     show={show}
     onClose={onToggle}
     direction="right"
-    overlayStyle={{background:"red"}}
    >
    Hello World
    </Drawer>
@@ -93,13 +92,13 @@ export default App;
 
 # Props
 
-| name            | type                                   | required | default | description                                                                |
-|-----------------|----------------------------------------|----------|---------|----------------------------------------------------------------------------|
-| show            | `boolean`                              | true     | false   | `false` - drawer close   `true` - drawer open                              |
-| onClose         | `func`                                 | false    |         | pass a func to toggle the drawer view                                      |
-| drawerStyle     | `object`                               | false    |         | `drawerStyle= {{         background:#6b6b6b, }}`                           |
-| drawerClassName | `string`                               | false    |         | add any custom class you want                                              |
-| width           | `string` \| `number`                   | false    | 350     | width will be effective only if the drawer position is  `left` or `right`  |
-| height          | `string` \| `number`                   | false    | 350     | height will be effective only if the drawer position is  `top` or `bottom` |
-| direction       | `left` \| `right` \| `top` \| `bottom` | false    | left    | change drawer position  eg: `direction="right"`                            |
-| backdrp         | `string`                               | false    |         | drawer backdground color                                                   |
+| name            | type                                   | required | default | description                                                               |
+| --------------- | -------------------------------------- | -------- | ------- | ------------------------------------------------------------------------- |
+| show            | `boolean`                              | true     | false   | `false` - drawer close `true` - drawer open                               |
+| onClose         | `func`                                 | false    |         | pass a func to toggle the drawer view                                     |
+| drawerStyle     | `object`                               | false    |         | `drawerStyle= {{ background:#6b6b6b, }}`                                  |
+| drawerClassName | `string`                               | false    |         | add any custom class you want                                             |
+| width           | `string` \| `number`                   | false    | 350     | width will be effective only if the drawer position is `left` or `right`  |
+| height          | `string` \| `number`                   | false    | 350     | height will be effective only if the drawer position is `top` or `bottom` |
+| direction       | `left` \| `right` \| `top` \| `bottom` | false    | left    | change drawer position eg: `direction="right"`                            |
+| backdrp         | `string`                               | false    |         | backdrop color                                                            |
